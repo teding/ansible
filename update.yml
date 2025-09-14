@@ -8,3 +8,5 @@
     - name: Upgrade all packages
       apt:
         upgrade: dist
+    - name: Reboot the machine with all defaults using Ansible
+  reboot:
