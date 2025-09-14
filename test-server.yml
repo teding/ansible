@@ -1,0 +1,10 @@
+- name: Update and Upgrade proxmox
+  hosts: all
+  tasks:
+    - name: Update packet list
+      apt:
+        update_cache: yes
+
+    - name: Upgrade all packages
+      apt:
+        upgrade: dist
